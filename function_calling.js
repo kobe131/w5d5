@@ -1,10 +1,12 @@
 Function.prototype.myBind = function (context) {
-   return () => {
+   
+  return () => {
     // console.log(Function);
     // console.log("pppp");
     // console.log(context);
     // let save = this.name;
-    // console.log(save);  
+    // console.log(save); 
+     
   this.apply(context);
   };
 };
